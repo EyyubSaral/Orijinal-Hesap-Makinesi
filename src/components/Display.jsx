@@ -14,9 +14,7 @@ export default function Display({ currentCalc }) {
     numToDisplay = numToDisplay[0];
   }
 
-  numToDisplay = numToDisplay
-    .toString()
-    .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+  numToDisplay = numToDisplay.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
   // ipucu: https://stackoverflow.com/questions/2901102/how-to-format-a-number-with-commas-as-thousands-separators
 
